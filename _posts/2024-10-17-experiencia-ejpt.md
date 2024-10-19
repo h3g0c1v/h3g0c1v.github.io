@@ -33,7 +33,7 @@ Además, de las máquinas, tendrás que responder **35 preguntas**, algunas tipo
 
 ## Experiencia y preparación
 ### Experiencia previa
-En cuando a mi experiencia previa para el examen, **ya contaba con mucha más práctica** resolviendo múltiples máquinas en diferentes plataformas como *[Hack The Box](https://www.hackthebox.com/)*, *[Try Hack Me](https://tryhackme.com/)* o *[Vulnhub](https://www.vulnhub.com/)* entre otras, además de hacer realizado **varios curso centrados en la seguridad ofensiva**. Es debido a esto, que no realicé el curso completo del *PTS* ya que la mayoría de los temas que se tocan los tenía claros por mi experiencia previa.
+En cuando a mi experiencia previa para el examen, **ya contaba con mucha más práctica** resolviendo múltiples máquinas en diferentes plataformas como *[Hack The Box](https://www.hackthebox.com/)*, *[Try Hack Me](https://tryhackme.com/)*, *[The Hacker Labs](https://thehackerslabs.com/)* o *[Vulnhub](https://www.vulnhub.com/)* entre otras, además de hacer realizado **varios curso centrados en la seguridad ofensiva**. Es debido a esto, que no realicé el curso completo del *PTS* ya que la mayoría de los temas que se tocan los tenía claros por mi experiencia previa.
 
 En cuyo caso, decidí seguir practicando con diferentes máquinas que tenían un mayor enfoque en la certificación **eJPT** y es por ello que dejo un recurso que he creado con todas las máquinas que he ido realizando en la preparación del examen.
 
