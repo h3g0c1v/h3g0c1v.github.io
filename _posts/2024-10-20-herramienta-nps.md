@@ -44,7 +44,7 @@ De esta manera, podemos ejecutarlo en cualquier momento.
 nps
 ```
 
-## **Poniendolo en práctica**
+## **Poniéndolo en práctica**
 Bien, hasta ahora solo hemos hablado del funcionamiento de nps y de cómo clonarla, pero aún no la hemos probado. Para ver el **panel de ayuda**, simplemente necesitamos ejecutar la herramienta. Esto nos proporcionará información sobre los **parámetros** que podemos utilizar.
 
 Cabe recalcar, que la herramienta **deberá de ejecutarse como root**, en caso contrario nos saldrá el siguiente mensaje de error.
