@@ -1,5 +1,6 @@
 ---
 title: Mi Experiencia con la certificación eJPTv2
+description:  El objetivo de este blog es brindar apoyo a las personas que se estén adentrando al mundo de la ciberseguridad.
 date: 2024-10-17
 categories: [Certifications, eJPTv2]
 tags: [eJPTv2, INE Security, Junior Penetration Tester]
@@ -31,7 +32,7 @@ En primera instancia, tendrás acceso y perteneceras a una **red *DMZ***, en la 
 
 Además, de las máquinas, tendrás que responder a **35 preguntas**, algunas tipo test y otras no, en un plazo de 48 horas con las que se te evaluará y dependerá tu nota del examen. Es necesario, obtener al menos un 70% para poder aprobar el examen y cabe destacar que tienes dos oportunidades para aprobar, por lo que si suspendes la primera vez no te preocupes, ya que contarás con otra oportunidad.
 
-## Experiencia y preparación
+## **Experiencia y preparación**
 ### Experiencia previa
 En cuando a mi experiencia previa para el examen, **ya contaba con mucha más práctica** resolviendo múltiples máquinas en diferentes plataformas como *[Hack The Box](https://www.hackthebox.com/)*, *[Try Hack Me](https://tryhackme.com/)*, *[The Hacker Labs](https://thehackerslabs.com/)* o *[Vulnhub](https://www.vulnhub.com/)* entre otras, además de haber realizado **varios curso centrados en la seguridad ofensiva**. Es debido a esto, que no realicé el curso completo del *PTS*, ya que la mayoría de los temas que se tocan los tenía claros por mi experiencia previa.
 
@@ -48,7 +49,7 @@ Por supuesto, monté varios laboratorios utilizando algunas de las máquinas del
 
 Con toda esta preparación, más la previa experiencia que contaba, estaba más que preparado y con mucha confianza para afrontar el examen.
 
-## Consejos
+## **Consejos**
 1. **Se organizado**: Create una carpeta por cada host que encuentres y almacena el contenido de forma estructurada. Por ejemplo, guarda los escaneos en la carpeta `nmap`; los recursos que encuentres en la carpeta `content`; los exploits que uses en la carpeta `exploits`.
 2. **Toma apuntes**: Utiliza herramientas como *Obsidian*, *Excalidraw*, *Draw.io* y/o *App Diagrams* para tomar apuntes y hacerte tu mapa visual de la red. Esto te ayudará muchisimo a organizarte.
 3. **Lee las preguntas antes de empezar el laboratorio**: Leer las preguntas antes de comenzar el laboratorio te ayudará a acordarte de ellas en función de lo que vayas encontrando y te permitirá responderlas con facilidad.
@@ -57,7 +58,7 @@ Con toda esta preparación, más la previa experiencia que contaba, estaba más 
 6. **Aprovecha las respuestas**: Muchas de las preguntas y respuestas del examen te dan una pista por donde pueden ir los tiros. Prestar atención a estos detalles puede ayudarte a identificar vulnerabilidades y a enfocar mejor el examen.
 7. **Todo lo que necesitas está ahí**: No hace falta que te compliques con scripts adicionales. El entorno que se te ha proporcionado contiene todas las respuestas que necesitas.
 
-## Conclusión
+## **Conclusión**
 Personalmente, considero que el examen es **relativamente fácil**, habiendolo logrado concluir en 9 horas yendo despacio y apuntando todo con calma. Recomiendo encarecidamente esta certificación ya que te enfrenta a un **entorno real** y no a los típicos *CTFs* (aunque si que tendrás que introducir algunas flags).
 
 Tanto si tienes conocimientos más avanzados como si eres principiante es bastante acertado **obtener el eJPT** y te ayuda a familiarizarte con las diferentes fases de una auditoría real y a dominar herramientas esenciales como:
@@ -73,7 +74,7 @@ Tanto si tienes conocimientos más avanzados como si eres principiante es bastan
 
 Aún así, si tienes más experiencia y no quieres enfrentarte a una certificación fácil como la del **eJPT**, podrías considerar **certificaciones más avanzadas** como *eCPPT*, *eWPT*, *eWPTX*, *OSEP*, *OSCP*, y muchas otras más. Sin embargo, el *eJPT* te puede servir como primer examen para **perder el "miedo"** a este tipo de certificaciones, y es justamente de lo que **me ha servido esta certificación**.
 
-## Algunos recursos que recomiendo
+## **Algunos recursos que recomiendo**
 
 - [Curso de Introducción al Hacking en Hack4u (S4vitar)](https://hack4u.io/cursos/introduccion-al-hacking/) ➜ Curso avanzado que cubre más alla de los conocimientos del eJPT.
 - [Curso de Preparación para la Certificación del eJPTv2 (El Pinguino de Mario)](https://elrincondelhacker.es/courses/preparacion-certificacion-ejptv2/) ➜ Curso especializado en prepararse para el eJPT.
@@ -84,7 +85,7 @@ Aún así, si tienes más experiencia y no quieres enfrentarte a una certificaci
 - [Pivoting en Metasploit para entornos Linux](https://www.youtube.com/watch?v=RotyKByc8Jc&t=708s) ➜ Tutorial para hacer pivoting con Metasploit en entornos Linux.
 - [eJPT RoadMap](https://github.com/nyxragon/ejpt-roadmap) ➜ Una guía de ruta para seguir semana a semana con el fín de estar preparado para el examen del eJPT.
 
-## Despedida
+## **Despedida**
 Espero que este artículo les haya servido de ayuda para el eJPTv2. De todo corazón, ¡mucha suerte a todos!.
 
 ![Mi certificación eJPT](https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/118676081)
