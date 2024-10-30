@@ -13,4 +13,4 @@ fi
 
 Ambos iconos son el siguiente.
 
-![[target icono.png]]
+![Icono target](/assets/img/target-icono.png)

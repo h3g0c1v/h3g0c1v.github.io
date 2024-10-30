@@ -17,13 +17,12 @@ fi
 
 El primer icono es el siguiente.
 
-![[cube icono.png]]
+![Icono cubo](/assets/img/cube-icono.png)
 
 El segundo icono es el siguiente.
 
-![[cloud icono.png]]
+![Icono nube](/assets/img/cloud-icono.png)
 
 El tercer icono es el siguiente.
 
-![[icono disconnect bridge.png]]
-
+![Icono bridge desconectado](/assets/img/icono-disconnect-bridge.png)

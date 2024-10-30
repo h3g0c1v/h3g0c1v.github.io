@@ -14,12 +14,12 @@ fi
 
 El primer icono es el siguiente.
 
-![[vm icono.png]]
+![Icono VM](/assets/img/vm-icono.png)
 
 El segundo icono es el siguiente.
 
-![[windows icono.png]]
+![Icono Windows](/assets/img/windows-icono.png)
 
 El tercer icono es el siguiente.
 
-![[no entry icono.png]]
+![No entry icono](/assets/img/no-entry-icono.png)

@@ -12,8 +12,8 @@ fi
 
 El primer icono es el siguiente.
 
-![[icono ethernet.png]]
+![Icono Ethernet](/assets/img/icono-ethernet.png)
 
 El segundo icono es el siguiente.
 
-![[eth1 icono disconnect.png]]
+![Icono de eth1 Desconectado](/assets/img/eth1-icono-disconnect.png)

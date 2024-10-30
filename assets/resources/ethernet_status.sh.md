@@ -13,8 +13,8 @@ fi
 
 El primer icono es el siguiente.
 
-![[icono bridge.png]]
+![Icono Bridge](/assets/img/icono-bridge.png)
 
 El segundo icono es el siguiente.
 
-![[icono disconnect bridge.png]]
+![Icono de Bridge desconectado](/assets/img/icono-disconnect-bridge.png)

@@ -14,7 +14,7 @@ Usar *Kali Linux* o *Parrot OS* por defecto está genial, sin embargo, si querem
 
 ## Descargando Kali Linux
 
-Para descargarnos el SO Kali Linux, nos deberemos de dirigir a la [página de Kali Linux](https://www.kali.org/get-kali/). Seleccionaremos la descarga a nuestra preferencia. En mi caso descargaré la de VMWare por lo que seleccionaré la opción corresponidente a la de VMWare.
+Para descargarnos el SO Kali Linux, nos deberemos de dirigir a la [página de Kali Linux](https://www.kali.org/get-kali/). Seleccionaremos la descarga a nuestra preferencia. En mi caso descargaré la de VMWare por lo que seleccionaré la opción correspondiente a la de VMWare.
 
 Una vez descargado e instalado en nuestro software de virtualización, ejecutaremos un **upgrade** completo del sistema.
 
@@ -74,7 +74,7 @@ Si ahora ejecutamos el comando `which sxhkd`, veremos el binario correspondiente
 which sxhkd
 ```
 
-Algo que debemos de tener en cuentra son sus ficheros de configuración.
+Algo que debemos de tener en cuenta son sus ficheros de configuración.
 
 - **bspwm** ➜ `bspwmrc`
 - **sxhkd** ➜ `sxhkdrc`
@@ -266,7 +266,7 @@ super + d
         /usr/bin/rofi -show run 
 ```
 
-Ahora si, reiniciaremos el equipo e iniciaremos el entorno de `bspwm`.
+Ahora sí, reiniciaremos el equipo e iniciaremos el entorno de `bspwm`.
 
 ```bash
 reboot
@@ -290,7 +290,7 @@ Al iniciar en el entorno `bspwm`, puede que se nos desconfigure la configuració
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
-Seleccionaremos el layout por defecto que nos aparece en la primera pantalla. Seguidamente, seleccioanremos `Other` + `Spanish` y las demás opciones las dejaremos por defecto.
+Seleccionaremos el layout por defecto que nos aparece en la primera pantalla. Seguidamente, seleccionaremos `Other` + `Spanish` y las demás opciones las dejaremos por defecto.
 
 Una vez configurado, reiniciaremos el equipo y ya tendremos el teclado nuevamente configurado.
 
@@ -437,7 +437,7 @@ selection_foreground #7aa2f7
 selection_background #28344a
 ```
 
-Ahora, en caso de que no lo tengamos instalado, instalaremos `imagemagick` para el tratamiento de imagenes.
+Ahora, en caso de que no lo tengamos instalado, instalaremos `imagemagick` para el tratamiento de imágenes.
 
 ```bash
 sudo apt install imagemagick -y
@@ -525,7 +525,7 @@ Sincronizaremos y actualizaremos la cache de fuentes con el siguiente comando.
 fc-cache -v
 ```
 
-De esta manera, si nos salimos de la sesión con `CTRL + SHIFT + q` e iniciamos sesión, veremos como nos carga correctamente la polybar.
+De esta manera, si nos salimos de la sesión con `CTRL + SHIFT + q` e iniciamos sesión, veremos cómo nos carga correctamente la polybar.
 
 ![Polybar recién instalada](/assets/img/polybar-recien-instalada.png)
 
@@ -1198,7 +1198,7 @@ Podemos buscar archivos dentro de nuestro directorio actual de trabajo con `ESC 
 ESC + ESPACIO + ff
 ```
 
-Si queremos ver el mismo archivo pero para comparar diferentes lugares del mismo y no perder el punto de vista actual, podemos ejecutar el comando `ESC + :vsp`  o `ESC + :sp` y nos creará una copia idéntica con la que podemos movernos.
+Si queremos ver el mismo archivo pero para comparar diferentes lugares de este y no perder el punto de vista actual, podemos ejecutar el comando `ESC + :vsp`  o `ESC + :sp` y nos creará una copia idéntica con la que podemos movernos.
 
 ```bash
 ESC + :vsp ## Nos lo abre a la derecha
@@ -1240,7 +1240,7 @@ ALT + a
 
 ## Configurando certificado de BurpSuite
 
-Por último, configuraremos el certificado de *BurpSuite*. Para ello, abrimos BurpSuite y configuramos el proxy utilizando una extensión como FoxyProxy o directamente configurandolo en el navegador. Una vez hecho esto, accedemos a la siguiente URL para continuar con el proceso.
+Por último, configuraremos el certificado de *BurpSuite*. Para ello, abrimos BurpSuite y configuramos el proxy utilizando una extensión como FoxyProxy o directamente configurándolo en el navegador. Una vez hecho esto, accedemos a la siguiente URL para continuar con el proceso.
 
 >**URL para descargar el certificado de BurpSuite**<br>
 >http://burp/
@@ -1265,9 +1265,9 @@ Eliminamos todo el contenido de descargas y hemos terminado de personalizar el l
 rm -rf ~/Downloads
 ```
 
-## Creditos
+## Créditos
 
-Quiero agradecer a **Marcelo Vazquez, aka s4vitar** quien ha configurado el entorno y me ha dado permiso para publicar este blog. **Marcelo Vazquez** es CEO y fundador de la academia de hacking ético *[Hack4u](https://hack4u.io)*, pentester, YouTuber, Streamer y un gran ejemplo a seguir. A continuación, os comparto sus redes sociales para que podáis mostrarle vuestro apoyo.
+Quiero agradecer a **Marcelo Vázquez, aka s4vitar** quien ha configurado el entorno y me ha dado permiso para publicar este blog. **Marcelo Vázquez** es CEO y fundador de la academia de hacking ético *[Hack4u](https://hack4u.io)*, pentester, YouTuber, Streamer y un gran ejemplo a seguir. A continuación, os comparto sus redes sociales para que podáis mostrarle vuestro apoyo.
 
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/s4vitar/)
 - [![Github](https://img.shields.io/badge/Github-000?style=rounded-square&logo=Github&logoColor=white&link=https://github.com/h3g0c1v)](https://github.com/s4vitar)
@@ -1276,6 +1276,6 @@ Quiero agradecer a **Marcelo Vazquez, aka s4vitar** quien ha configurado el ento
 - [![Twitch](https://img.shields.io/badge/Twitch-9347FF?logo=twitch&logoColor=white)](https://www.twitch.tv/s4vitaar)
 
 ## Despedida
-Espero que con este entorno os sintais más cómodos y mejoréis vuestra eficiencia. Muchas gracias por leer este blog. ¡Nos vemos en el siguiente!
+Espero que con este entorno os sintáis más cómodos y mejoréis vuestra eficiencia. Muchas gracias por leer este blog. ¡Nos vemos en el siguiente!
 
 ![Entorno finalizado](/assets/img/entorno-finalizado.png)
