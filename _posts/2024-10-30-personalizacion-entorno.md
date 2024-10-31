@@ -3,7 +3,7 @@ title: Personalización de entorno en Linux
 description: En este artículo vamos a personalizar un entorno Linux, con el fin de mejorar la eficacia.
 date: 2024-10-30
 categories: [personalizacion, entorno]
-tags: [personalizar, entorno, bspwm, sxhkd, polybar, kali-linux, parrot-os, kitty, picom, rofi]
+tags: [personalizar, entorno, bspwm, sxhkd, polybar, kali-linux, parrot-os, kitty, picom, rofi, fzf, lsd, batcat, nvchad, neovim, nvim, hack4u, s4vitaar, burpsuite, modulos, virtualizacion, vmware, virtualbox, feh, powerlevel10k]
 img_path: /assets/img/entorno.png
 image: /assets/img/entorno.png
 ---
