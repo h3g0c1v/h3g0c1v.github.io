@@ -8,11 +8,11 @@ img_path: /assets/img/entorno.png
 image: /assets/img/entorno.png
 ---
 
-## Introducción
+## **Introducción**
 
 Usar *Kali Linux* o *Parrot OS* por defecto está genial, sin embargo, si queremos llevar a otro nivel nuestro movimiento por el entorno y ser más eficientes, deberemos de personalizar nuestro entorno de manera que nos sintamos cómodos y seamos rápidos en él. Es por esto, por lo que traigo este artículo en el que personalizaremos nuestro entorno en un sistema *Kali Linux*, aunque esta misma configuración se puede realizar en un sistema *Parrot OS*.
 
-## Descargando Kali Linux
+## **Descargando Kali Linux**
 
 Para descargarnos el SO Kali Linux, nos deberemos de dirigir a la [página de Kali Linux](https://www.kali.org/get-kali/). Seleccionaremos la descarga a nuestra preferencia. En mi caso descargaré la de VMWare por lo que seleccionaré la opción correspondiente a la de VMWare.
 
@@ -29,7 +29,7 @@ sudo apt update -y && sudo apt upgrade -y
 
 Al finalizar al upgrade, realizaremos un *Snapshot* de la máquina ya que, en caso de que nos falle posteriormente, tendremos un punto de partida al que volver.
 
-## Instalación de paquetes necesarios
+## **Instalación de paquetes necesarios**
 
 Antes que nada, vamos a instalar algunos paquetes, algunos **necesarios para la configuración del entorno**, y otros adicionales. Puedes ajustar estos paquetes a tu gusto.
 
@@ -37,7 +37,7 @@ Antes que nada, vamos a instalar algunos paquetes, algunos **necesarios para la 
 sudo apt install build-essential git vim libxcb1 libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev make zsh caja locate -y
 ```
 
-## Instalación y configuración de Bspwm y Sxhkd
+## **Instalación y configuración de Bspwm y Sxhkd**
 
 Instalaremos *bspwm* y *sxhkd* desde los repositorios oficiales. Para ello, nos dirigiremos a nuestra carpeta `Downloads` y clonaremos los repositorios **desde un usuario NO privilegiado**.
 
@@ -212,7 +212,7 @@ Para que funcione correctamente, le asignaremos permisos de ejecución.
 ```bash
 chmod u+x bspwm_resize
 ```
-## Instalación de la polybar, Picom y Rofi
+## **Instalación de la polybar, Picom y Rofi**
 
 Instalaremos la `polybar` ejecutando el comando que se muestra a continuación.
 
@@ -274,7 +274,7 @@ reboot
 
 Una vez reiniciado, para iniciar el entorno `bspwm` lo seleccionaremos en la parte del login.
 
-![Iniciando Bspwm](/assets/img/iniciando bspwm.png)
+![Iniciando Bspwm](/assets/img/iniciando-bspwm.png)
 
 En caso de que no nos aparezca, deberemos de instalar `bspwm` con `apt`.
 
@@ -297,7 +297,7 @@ Una vez configurado, reiniciaremos el equipo y ya tendremos el teclado nuevament
 ```bash
 reboot
 ```
-## Habilitando la clipboard bidireccional
+## **Habilitando la clipboard bidireccional**
 
 Vamos a habilitar la clipboard bidireccional. Para ello, abriremos el fichero `/home/kali/.config/bspwm/bspwmrc` y meteremos el siguiente contenido al final de este.
 
@@ -306,7 +306,7 @@ vmware-user-suid-wrapper &
 ```
 
 Reiniciaremos el `bspwmrc` con `Win + Shift + R` y ya podríamos copiar y pegar bidireccionalmente.
-## Configurando las fuentes, la Kitty e instalación de Feh
+## **Configurando las fuentes, la Kitty e instalación de Feh**
 
 A continuación, instalaremos la fuente *Hack Nerd Fonts*. Para ello, iremos al [siguiente enlace](https://www.nerdfonts.com/).
 
@@ -489,7 +489,7 @@ Y configuramos el fondo de pantalla en el fichero `~/.config/bspwm/bspwmrc`.
 /usr/bin/feh --bg-fill /home/kali/Desktop/Fondos/Wallpaper.jpg
 ```
 
-## Despliegue de la Polybar
+## **Despliegue de la Polybar**
 
 Nos vamos a ir al directorio `Downloads` como un usuario **NO** privilegiado y nos clonaremos un repositorio que trae ciertas configuraciones de la `polybar` que vamos a estar usando.
 
@@ -529,7 +529,7 @@ De esta manera, si nos salimos de la sesión con `CTRL + SHIFT + q` e iniciamos 
 
 ![Polybar recién instalada](/assets/img/polybar-recien-instalada.png)
 
-## Configurando los bordeados, las sombras y los difuminados con Picom
+## **Configurando los bordeados, las sombras y los difuminados con Picom**
 
 Vamos a configurar `picom` y para ello deberemos de crear un fichero de configuración para este.
 
@@ -552,7 +552,7 @@ A demás, vamos a quitar el borde blanco de la terminal, desde el fichero `~/.co
 bspc config border_width 0
 ```
 
-## Configurando la ZSH e instalando Powerlevel10k
+## **Configurando la ZSH e instalando Powerlevel10k**
 
 Vamos a instalar unos plugins para la  *zsh*. Nos ponemos como *root* y ejecutamos el siguiente comando.
 
@@ -920,7 +920,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd
 ```
 
-## Instalación de Batcat y Lsd
+## **Instalación de Batcat y Lsd**
 
 A continuación, instalaremos `bat` y `lsd` desde los repositorios oficiales de cada uno, que son [bat](https://github.com/sharkdp/bat) y [lsd](https://github.com/lsd-rs/lsd/). Nos ponemos como un usuario **NO** privilegiado y lo descargamos en `~/Downloads/`.
 
@@ -1039,7 +1039,7 @@ vmname LG3d &
 
 Con esto, podremos ejecutar *BurpSuite* correctamente desde `rofi` seleccionando `burpsuite-launcher`.
 
-## Configurando y creando nuevos módulos en la Polybar
+## **Configurando y creando nuevos módulos en la Polybar**
 
 Dentro del directorio `~/.config/` del usuario *kali* tenemos un directorio `polybar`.
 
@@ -1105,7 +1105,7 @@ label-occupied-foreground = ${color.yellow}
 label-occupied-background = ${color.bg}
 ```
 
-## Instalando fzf
+## **Instalando fzf**
 
 Para instalar `fzf`, nos iremos al [repositorio oficial de GitHub](https://github.com/junegunn/fzf?tab=readme-ov-file#using-git) y como indican, ejecutaremos los siguientes comandos tanto como el usuario **NO** privilegiado como con el *privilegiado*.
 
@@ -1120,7 +1120,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 Las opciones de cada uno son las de por defecto, por lo que le daremos `ENTER` a las tres opciones que te preguntan.
 
-## Configuración e integración de NVchad en Neovim
+## **Configuración e integración de NVchad en Neovim**
 
 Nos ponemos como un usuario **NO** privilegiado y nos vamos al `/home/kali/`. Ahora, seguiremos los pasos que indican en la instalación del [repositorio oficial de GitHub](https://github.com/NvChad/NvChad) aunque con algunos cambios.
 
@@ -1178,7 +1178,53 @@ Después, vamos a abrir cualquier fichero `.lua` y ejecutaremos el comando `:Mas
 
 Realizaremos estos mismos pasos de integración y configuración de `nvchad` con el usuario *root*.
 
-## Comandos Nvchad
+## **Configurando tema para rofi**
+
+Nos vamos a ir a `/opt` y nos clonaremos el siguiente [repositorio](https://github.com/newmanls/rofi-themes-collection).
+
+```bash
+cd /opt
+sudo git clone https://github.com/newmanls/rofi-themes-collection
+```
+
+Seguidamente, en caso de que no esté creado, nos crearemos el directorio `~/.config/rofi/themes`.
+
+```bash
+mkdir -p ~/.config/rofi/themes
+```
+
+Y copiaremos todo el contenido de `/opt/rofi-themes-collection/themes` en `~/.config/rofi/themes`.
+
+```bash
+cp /opt/rofi-themes-collection/themes/* ~/.config/rofi/themes
+```
+
+Ejecutamos el comando `rofi-themes-selector` y seleccionamos el tema que más nos guste. Para ir viendo cada uno, nos iremos moviendo con las flechas de arriba y abajo y dándole a `ENTER` en el tema que queramos ver. En mi caso, el que más me gustó fue el `rounded-green-dark`. Una vez que tengamos el tema que nos gusta seleccionado, lo configuraremos con la combinación de teclas `ALT + a`.
+
+```bash
+ALT + a
+```
+
+## **Configurando certificado de BurpSuite**
+
+Por último, configuraremos el certificado de *BurpSuite*. Para ello, abrimos BurpSuite y configuramos el proxy utilizando una extensión como FoxyProxy o directamente configurándolo en el navegador. Una vez hecho esto, accedemos a la siguiente URL para continuar con el proceso.
+
+>**URL para descargar el certificado de BurpSuite**<br>
+>http://burp/
+
+Nos descargamos el certificado desde el botón de *Ca Certificate*.
+
+![Descargandonos el certificado de BurpSuite](/assets/img/descargandonos-el-certificado-de-burpsuite.png)
+
+Y ahora lo importamos.
+
+![Importando el certificado de BurpSuite](/assets/img/importando-el-certificado-de-burpsuite.png)
+
+Seleccionamos la siguiente opción y le damos a *Aceptar*.
+
+![Confiar en esta CA de BurpSuite para identificar sitios web](assets/img/confiar-en-esta-ca-de-burpsuite-para-identificar-sitios-web.png)
+
+## **Comandos Nvchad**
 
 Con `nvchad`, podemos configurar *Temas*. Ejecutaremos la combinación de teclas `ESC + ESPACIO + th` y seleccionaremos el tema deseado.
 
@@ -1211,53 +1257,7 @@ Si queremos ver el *CheatSheet* del propio `nvchad`, podemos efectuar la combina
 ESC + ESPACIO + ch
 ```
 
-## Configurando tema para rofi
-
-Nos vamos a ir a `/opt` y nos clonaremos el siguiente [repositorio](https://github.com/newmanls/rofi-themes-collection).
-
-```bash
-cd /opt
-sudo git clone https://github.com/newmanls/rofi-themes-collection
-```
-
-Seguidamente, en caso de que no esté creado, nos crearemos el directorio `~/.config/rofi/themes`.
-
-```bash
-mkdir -p ~/.config/rofi/themes
-```
-
-Y copiaremos todo el contenido de `/opt/rofi-themes-collection/themes` en `~/.config/rofi/themes`.
-
-```bash
-cp /opt/rofi-themes-collection/themes/* ~/.config/rofi/themes
-```
-
-Ejecutamos el comando `rofi-themes-selector` y seleccionamos el tema que más nos guste. Para ir viendo cada uno, nos iremos moviendo con las flechas de arriba y abajo y dándole a `ENTER` en el tema que queramos ver. En mi caso, el que más me gustó fue el `rounded-green-dark`. Una vez que tengamos el tema que nos gusta seleccionado, lo configuraremos con la combinación de teclas `ALT + a`.
-
-```bash
-ALT + a
-```
-
-## Configurando certificado de BurpSuite
-
-Por último, configuraremos el certificado de *BurpSuite*. Para ello, abrimos BurpSuite y configuramos el proxy utilizando una extensión como FoxyProxy o directamente configurándolo en el navegador. Una vez hecho esto, accedemos a la siguiente URL para continuar con el proceso.
-
->**URL para descargar el certificado de BurpSuite**<br>
->http://burp/
-
-Nos descargamos el certificado desde el botón de *Ca Certificate*.
-
-![Descargandonos el certificado de BurpSuite](/assets/img/descargandonos-el-certificado-de-burpsuite.png)
-
-Y ahora lo importamos.
-
-![Importando el certificado de BurpSuite](/assets/img/importando-el-certificado-de-burpsuite.png)
-
-Seleccionamos la siguiente opción y le damos a *Aceptar*.
-
-![Confiar en esta CA de BurpSuite para identificar sitios web](assets/img/confiar-en-esta-ca-de-burpsuite-para-identificar-sitios-web.png)
-
-## Borrando el contenido de descargas
+## **Borrando el contenido de descargas**
 
 Eliminamos todo el contenido de descargas y hemos terminado de personalizar el laboratorio
 
@@ -1265,7 +1265,7 @@ Eliminamos todo el contenido de descargas y hemos terminado de personalizar el l
 rm -rf ~/Downloads
 ```
 
-## Créditos
+## **Créditos**
 
 Quiero agradecer a **Marcelo Vázquez, aka s4vitar** quien ha configurado el entorno y me ha dado permiso para publicar este blog. **Marcelo Vázquez** es CEO y fundador de la academia de hacking ético *[Hack4u](https://hack4u.io)*, pentester, YouTuber, Streamer y un gran ejemplo a seguir. A continuación, os comparto sus redes sociales para que podáis mostrarle vuestro apoyo.
 
@@ -1275,7 +1275,7 @@ Quiero agradecer a **Marcelo Vázquez, aka s4vitar** quien ha configurado el ent
 - [![Canal Secundario de YouTube](https://img.shields.io/badge/-Canal%20Secundario%20de%20YouTube-F00?&logo=youtube&labelColor=F00)](ttps://www.youtube.com/@S4viOnLive)
 - [![Twitch](https://img.shields.io/badge/Twitch-9347FF?logo=twitch&logoColor=white)](https://www.twitch.tv/s4vitaar)
 
-## Despedida
+## **Despedida**
 Espero que con este entorno os sintáis más cómodos y mejoréis vuestra eficiencia. Muchas gracias por leer este blog. ¡Nos vemos en el siguiente!
 
 ![Entorno finalizado](/assets/img/entorno-finalizado.png)
