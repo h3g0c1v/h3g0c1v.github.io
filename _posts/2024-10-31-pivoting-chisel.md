@@ -12,7 +12,7 @@ image: /assets/img/pivoting-chisel.png
 
 En un entorno real, las redes de la empresa **están segmentadas**, es decir, hay diferentes redes para diferentes lugares. Es por ello, que cuando estamos realizando una auditoría, debemos de tener los **conceptos de pivoting** bien claros, ya que sin ellos, no podremos abarcar todo el rango de activos de la empresa.
 
-Este artículo, tiene como finalidad, enseñar como **pivotar en la red**, haciendo de `chisel` y `socat`. El laboratorio que vamos a usar para practicar es [BigPivoting de DockerLabs](https://dockerlabs.es/) el cual, nos monta un total de 5 máquinas en diferentes interfaces, usando `docker`.
+Este artículo, tiene como finalidad, enseñar como **pivotar en la red**, haciendo uso de `chisel` y `socat`. El laboratorio que vamos a usar para practicar es [BigPivoting de DockerLabs](https://dockerlabs.es/) el cual, nos monta un total de 5 máquinas en diferentes interfaces, usando `docker`.
 
 Además, te servirá como ayuda para presentarte a exámenes como el **eCPPT** y **OSCP**.
 
