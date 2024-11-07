@@ -144,6 +144,7 @@ Podemos visualizar estos *hashes*, en el fichero que le hemos especificado más 
 Los siguientes son una serie de enlaces los cuales, me han ayudado a realizar este artículo y a aprender sobre ello.
 
 - [Account Operators Privilege Escalation](https://blog.cyberadvisors.com/technical-blog/blog/account-operators-privilege-escalation)
+- [Máquina Forest - HackTheBox](https://app.hackthebox.com/machines/212)
 - [Resolución de la Máquina Forest - S4vitar](https://www.youtube.com/watch?v=7G5wkoBpFWU)
 - [HackTricks - Dcsync](https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/dcsync)
 - [Everything you need to know about DCSync attacks](https://blog.quest.com/everything-you-need-to-know-about-dcsync-attacks/)
