@@ -24,7 +24,7 @@ Supongamos que estamos en el grupo *Account Operators*, o en algún grupo que in
 
 ![net user svc-alfresco](/assets/img/net-user-svc-alfresco.png)
 
-Este grupo a su vez es miembro de *Privileged IT Accounts* y este mimo grupo a su vez, pertenece al grupo de *Account Operators*. Desde el grupo de *Account Operators* podemos añadir un usuario al grupo de *Exchange Windows Permissions*, desde el cual nos podremos asignar el privilegio de *DCSync* y **dumpearnos todos los hashes NTLMv2 de todos los usuarios del dominio**.
+Este grupo a su vez es miembro de *Privileged IT Accounts* y este mismo grupo a su vez, pertenece al grupo de *Account Operators*. Desde el grupo de *Account Operators* podemos añadir un usuario al grupo de *Exchange Windows Permissions*, desde el cual nos podremos asignar el privilegio de *DCSync* y **dumpearnos todos los hashes NTLMv2 de todos los usuarios del dominio**.
 
 Todo esto, lo podemos ver más claro desde BloodHound.
 
