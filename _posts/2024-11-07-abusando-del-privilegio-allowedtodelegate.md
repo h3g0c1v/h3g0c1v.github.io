@@ -3,7 +3,7 @@ title: Active Directory - Abusando del Permiso AllowedToDelegate
 description: Abusando del permiso AllowedToDelegateTo para poder impersonar al usuario Administrator mediante un ticket ST.
 date: 2024-11-06
 categories: [active-directory, allowed-to-delegate]
-tags: [allowed-to-delegate-to, impersonar, gmsa, tgs, cuenta-de-servicio, ccache, getst, impacket, gmsadumper, pywerview, spn, hash-nt, service-ticket, st, krb5ccname, wmiexec]
+tags: [allowed-to-delegate-to, impersonar, gmsa, tgs, cuenta-de-servicio, ccache, getst, impacket, gmsadumper, pywerview, spn, hash-nt, service-ticket, st, krb5ccname, wmiexec, bloodhound]
 img_path: /assets/img/Abusing-AllowedToDelegate-Rights.png
 image: /assets/img/Abusing-AllowedToDelegate-Rights.png
 ---
