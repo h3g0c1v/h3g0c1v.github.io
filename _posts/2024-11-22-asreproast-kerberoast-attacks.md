@@ -1,6 +1,6 @@
 ---
 title: Active Directory - ASREPRoast y Kerberoast Attacks
-description: En este artículo se explicarán los dos ataques más comunes en entornos AD - ASRERoast Attack y Kerberoast Attack.
+description: En este artículo se explicarán dos ataques muy comunes en entornos AD - ASRERoast Attack y Kerberoast Attack.
 date: 2024-11-22
 categories: [active-directory, asreroast, kerberoast]
 tags: [casos-de-ataques-ad, impacket, getnpusers, getuserspn]
