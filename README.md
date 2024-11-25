@@ -13,6 +13,13 @@ Soy Héctor Civantos Cid (aka H3g0c1v), un entusiasta de la ciberseguridad con u
 
 Algunos de los artículos más populares que puedes encontrar en el blog son:
 
+- **[Active Directory - ASREPRoast y Kerberoast Attacks](https://h3g0c1v.github.io/posts/asreproast-kerberoast-attacks/)**
+- **[Active Directory - Abusando del Permiso AllowedToDelegate](https://h3g0c1v.github.io/posts/abusando-del-privilegio-allowedtodelegate/)**
+- **[Active Directory - Abusando del Grupo Account Operators](https://h3g0c1v.github.io/posts/abusing-account-operators-group/)**
+- **[Pivoting con Chisel](https://h3g0c1v.github.io/posts/pivoting-chisel/)**
+- **[Personalización de entorno en Linux](https://h3g0c1v.github.io/posts/personalizacion-entorno/)**
+- **[Hacking en Redes Wi-Fi - Vulnerabilidades y Cómo Protegerte](https://h3g0c1v.github.io/posts/wireless-hacking/)**
+- **[NPS - La herramienta perfecta para encontrar scripts de Nmap fácilmente](https://h3g0c1v.github.io/posts/herramienta-nps/)**
 - **[Mi Experiencia con la certificación eJPTv2](https://h3g0c1v.github.io/posts/experiencia-ejpt/)**
 
 ## Cómo Contribuir
