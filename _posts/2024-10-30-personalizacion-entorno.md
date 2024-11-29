@@ -315,7 +315,7 @@ A continuación, instalaremos la fuente *Hack Nerd Fonts*. Para ello, iremos al 
 
 Y nos descargaremos el comprimido de la fuente de *Hack Nerd Fonts*.
 
-![Hack Nerd Fonts](/assets/img/hack nerd fonts.png)
+![Hack Nerd Fonts](/assets/img/hack-nerd-fonts.png)
 
 Nos dirigiremos al siguiente directorio, moveremos el comprimido y lo descomprimiremos como el usuario *root*. Además, eliminaremos los ficheros que no necesitamos.
 
