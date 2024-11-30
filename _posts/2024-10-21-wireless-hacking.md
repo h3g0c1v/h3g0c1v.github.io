@@ -125,5 +125,5 @@ Hasta ahora, hemos estado viendo como vulnerar una red Wi-Fi, pero igual de impo
 4. **Usa una contraseña segura** ➜ Tanto la clave de acceso al router como la de la red, suelen ser bastante vulnerables. Por ello, es fundamental configurar una **contraseña robusta** para aumentar la seguridad.
 5. **Monitorea tu red regularmente** ➜ Monitorear los dispositivos conectados a tu red te permitirá detectar cualquier **acceso sospechoso** y/o **no autorizado**.
 
-## Despedida
+## **Despedida**
 Muchas gracias por haber dedicado su tiempo en leer este blog. Espero que le haya servido de ayuda. ¡Recuerda, la seguridad en las redes es esencial para mantener tus conexiones protegidas!"
