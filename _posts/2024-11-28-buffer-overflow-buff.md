@@ -433,6 +433,11 @@ Ahora, ejecutaremos de nuevo el script con la pequeña modificación anterior y 
 
 Esta, es una explotación básica de un *Buffer OverFlow*.
 
-## *Despedida*
+## **Enlaces de Referencia**
+Los siguientes enlaces, me han servido de ayuda para aprender sobre este tema:
+
+- [Máquina Buff de HackTheBox](https://app.hackthebox.com/machines/Buff)
+
+## **Despedida**
 
 Se que el *BoF* puede ser abrumador al principio pero, cuanto más practiques este tipo de explotaciones, más ameno se te va a ir haciendo el aprendizaje. ¡No te rindas nunca!
