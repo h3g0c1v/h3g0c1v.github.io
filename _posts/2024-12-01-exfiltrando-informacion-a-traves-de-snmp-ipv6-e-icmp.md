@@ -398,7 +398,7 @@ from scapy.all import *
 # Función que llamará el sniffer cada vez que entre un paquete
 def filter_data(packet):
     if packet.haslayer(ICMP):
-        if packet[ICMP].type == 0:
+        if packet[ICMP].type == 8:
             print(packet[ICMP].load[-4:].decode("utf-8"), flush=True, end='')
     
 # Función Main
