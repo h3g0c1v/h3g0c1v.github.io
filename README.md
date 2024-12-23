@@ -13,6 +13,9 @@ Soy Héctor Civantos Cid (aka H3g0c1v), un entusiasta de la ciberseguridad con u
 
 Algunos de los artículos más populares que puedes encontrar en el blog son:
 
+- **[Active Directory - Abusando del Grupo DNSAdmins](https://h3g0c1v.github.io/posts/abusing-dnsadmins-group/)**
+- **[Exfiltrando información por SNMP, IPv6 e ICMP](https://h3g0c1v.github.io/posts/exfiltrando-informacion-a-traves-de-snmp-ipv6-e-icmp/)**
+- **[Explotación Básica de un Buffer OverFlow (BoF)](https://h3g0c1v.github.io/posts/buffer-overflow-buff/)**
 - **[Active Directory - ASREPRoast y Kerberoast Attacks](https://h3g0c1v.github.io/posts/asreproast-kerberoast-attacks/)**
 - **[Active Directory - Abusando del Permiso AllowedToDelegate](https://h3g0c1v.github.io/posts/abusando-del-privilegio-allowedtodelegate/)**
 - **[Active Directory - Abusando del Grupo Account Operators](https://h3g0c1v.github.io/posts/abusing-account-operators-group/)**
