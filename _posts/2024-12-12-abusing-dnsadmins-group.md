@@ -78,6 +78,7 @@ smbserver.py smbFolder $(pwd) -smb2support
 ![recurso compartido con la dll.png](/assets/img/recurso-compartido-con-la-dll.png)
 
 > Es **importante** tener en cuenta que si ejecutamos el comando anterior, el recurso compartido tendrá el nombre de *smbFolder* el cual, **se alojará en el directorio actual de trabajo**. Es en este directorio, en el que deberá de estar la *DLL* en cuestión.
+{: .prompt-warning}
 
 Para establecer el fichero de configuración *DLL*, usaremos [`dnscmd.exe`](https://lolbas-project.github.io/lolbas/Binaries/Dnscmd/) de la siguiente manera.
 
@@ -105,6 +106,7 @@ sc.exe start dns
 ```
 
 > Puede que el servicio lo tengamos que parar y arrancar **varias veces para que funcione** e incluso, tener que inyectar de nuevo la *DLL*.
+{: .prompt-info}
 
 Una vez arrancado el servicio, habremos obtenido una consola como el usuario administrador del dominio y acceso total al *DC*.
 

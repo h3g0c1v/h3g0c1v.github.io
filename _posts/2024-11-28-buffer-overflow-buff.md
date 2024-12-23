@@ -334,6 +334,7 @@ Como no hay ningún *bad char*, nos muestra la columna *BadChars* vacía.
 ![vemos que no hay ningun bad char adicional](/assets/img/vemos-que-no-hay-ningun-bad-char-adicional.png)
 
 > Si hubiera alguno, tendríamos que volver a repetir el proceso pero, a la hora de generar el array de bytes, tendríamos que añadir el nuevo *bad char* que se nos haya mostrado en esta columna. Por ejemplo, si el programa detecta como *bad char* el *\0x01*, generaremos el array de bytes con el comando `!mona bytearray -cpb "\x00\x01"` y así con cada *bad char* que nos vaya saliendo.
+{: .prompt-info}
 
 Como no ha encontrado ningún *bad char* adicional, podemos proseguir con la generación del *shellcode* el cual, nos enviará una consola a nuestra máquina de atacantes. La *reverse shell* la generaremos con `msfvenom`.
 
