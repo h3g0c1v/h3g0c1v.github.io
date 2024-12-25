@@ -116,5 +116,33 @@ Una vez arrancado el servicio, habremos obtenido una consola como el usuario adm
 
 De esta manera, habremos comprometido el dominio habiéndonos convertido en el usuario con mayor privilegios.
 
+## **Clean Up**
+
+En la imagen anterior, nos podemos percatar que el servicio DNS **no se ha iniciado correctamente** debido a nuestro registro `ServerLevelPluginDll` que hemos inyectado.
+
+Realizar cambios de configuración y detener/reiniciar el servicio DNS en un **Controlador de Dominio** son acciones muy destructivas y deben llevarse a cabo con mucho cuidado. Como **pentester**, necesitamos consultar a nuestro cliente antes de proceder con este tipo de acción, ya que podría potencialmente afectar el servicio DNS en todo el entorno de **Active Directory** y causar varios problemas. Si nuestro cliente nos da permiso para continuar con el ataque, debemos ser capaces de cubrir nuestras huellas y limpiar después de nuestra intervención, o bien proporcionar a nuestro cliente los pasos necesarios para revertir los cambios realizados.
+
+Los siguientes pasos se deben realizarse desde una consola elevada con una cuenta de administrador local o de dominio.
+
+### **Clave de registro agregada**
+
+El primer paso es confirmar que existe la clave de registro `ServerLevelPluginDll`. Hasta que se elimine nuestra DLL personalizada, no podremos volver a iniciar el servicio DNS correctamente.
+
+```powershell
+reg query \\IP-IICTIMA\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters
+```
+
+Una vez validada la clave de registro que se ha generado, la deberemos de eliminar usar el comando `reg delete` para eliminar la clave que apunta a nuestra DLL personalizada.
+
+```powershell
+reg delete \\IP-VICTIMA\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters  /v ServerLevelPluginDll
+```
+
+Una vez hecho esto ya podremos iniciar nuevamente el servicio DNS. Comprobaremos que el servicio está arrancado correctamente.
+
+```powershell
+sc query dns
+```
+
 ## **Despedida**
 Muchas gracias por dar una oportunidad a este artículo y espero que hayas adquirido un nuevo superpoder. Grupos de los que se pueden abusar a nivel de *Active Directory* son muchos, y es por ello que hay que tenerlos todos en cuenta.

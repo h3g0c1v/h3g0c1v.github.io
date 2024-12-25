@@ -128,7 +128,7 @@ En la imagen anterior, se han enviado *1500* "*A*" sobre la aplicación. Si nos 
 
 La representación *0x41* en *ASCII* corresponde a la letra *A* que es, justamente, el carácter que hemos introducido múltiples veces. Al observar esto, hemos conseguido identificar que el binario *CloudMe* tiene la vulnerabilidad de *desbordamiento del búfer* o *Buffer OverFlow* (*BoF*). Si abrimos el programa de *CloudMe* veremos como se ha corrompido y se nos ha cerrado automáticamente.
 
-## **Obtención del offset**
+### **Obtención del offset**
 
 En este punto, ya deberíamos de estar pensando en intentar ejecutar código, como una *reverse shell*, directamente en la pila. Para ello, tenemos que empezar sacando el *offset* exacto antes de llegar a sobreescribir el registro *EIP*.
 
@@ -179,7 +179,7 @@ Una vez generada la cadena se la enviaremos al programa, que deberemos de volver
 
 El valor de *EIP* vale las *4* "*B*" que hemos enviado y justamente todos los valores anteriores serán las *1052* "*A*" restantes.
 
-## **Definiendo la estructura inicial del script**
+### **Definiendo la estructura inicial del script**
 
 Vamos a empezar a crear nuestro pequeño script en *Python3* que nos ayudará a explotar el *BoF*.
 
@@ -210,7 +210,7 @@ if __name__ == '__main__':
 
 Este script inicial, nos servirá para no tener que conectarnos continuamente con `nc` y enviar el *payload*. Lo tendremos que ir modificando cada vez que vayamos descubriendo nuevos valores.
 
-## **En busca de la instrucción de memoria JMP ESP**
+### **En busca de la instrucción de memoria JMP ESP**
 
 Lo siguiente que tenemos que hacer es, encontrar un registro que como valor tenga la instrucción `jmp esp`. El registro *EIP* es el encargado de definir cual es la siguiente dirección de memoria a la que el programa va a ir es decir, si en el *EIP* hay una dirección de memoria que tiene como instrucción un `jmp esp`, como esta instrucción lo que hace es ir directamente al registro *ESP* (pila), el programa lo siguiente que hará es ir a la *pila*. Entonces, si lo siguiente que hace el programa es ir a la pila, podremos indicar el comando que queramos que se ejecute, como por ejemplo, una *reverse shell*.
 
@@ -268,7 +268,7 @@ eip = pack("<L", 0x61FFBA23) # Direccion de memoria JMP ESP representada en litt
 
 Entonces, si ejecutamos el script para enviar nuevamente el payload, observaremos que el valor de *EIP* es igual al del *ESP* debido a que, como el *EIP* contiene una instrucción `jmp esp`, lo siguiente que hará es dirigirse a la dirección de memoria del *ESP*.
 
-## **Generación del shellcode**
+### **Generación del shellcode**
 
 En este punto, podemos generar nuestro *shellcode* el cual, se va a encargar de enviarnos una consola a nuestra máquina de atacantes. Algo que hay que tener en cuenta es, que cada binario tiene sus *bad chars* es decir, caracteres que no reconoce y no los interpreta correctamente. Esto es importante, ya que si generamos un *shellcode* con algún *bad char* no se interpretará correctamente y no funcionará el exploit.
 
@@ -346,13 +346,13 @@ msfvenom -p windows/shell_reverse_tcp --platform windows -a x86 -e x86/shikata_g
 
 El contenido generado por `msfvenom` lo reemplazaremos por el *shellcode* dentro del script.
 
-## **Not Operation Code (NOP)**
+### **Not Operation Code (NOP)**
 
 En principio, ya estaría listo para ejecutarse, pero hay un detalle adicional que debemos tener en cuenta. Antes de que el *shellcode* se ejecute, hay que dar un tiempo al programa para que termine las tareas anteriores que tenga pendientes de hacer. Para hacer esto, tenemos lo que se le llaman *Not Operation Code* (*NOP*) 
 
 Los *Not Operation Code* o *NOP*, son instrucciones en ensamblador que no realizan ninguna acción significativa durante la ejecución de un programa, más allá de consumir un ciclo de reloj del procesador o un pequeño espacio en la memoria. El valor con el que se le representa es el *0x90* y antes de ejecutar el *shellcode* habría que añadir unos cuantos *NOP* para que se ejecute correctamente y nos envíe la *reverse shell* correctamente. 
 
-## **Consiguiendo acceso a la máquina víctima**
+### **Consiguiendo acceso a la máquina víctima**
 
 El script final, quedaría de la siguiente manera.
 
