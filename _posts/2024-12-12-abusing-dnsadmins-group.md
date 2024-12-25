@@ -10,9 +10,11 @@ image: /assets/img/abusing-dnsadmins-injecting-dll.png
 
 ## **Introducción**
 
-Ya hemos publicado varios artículos sobre Active Directory, pero aún quedan muchos más que se irán subiendo próximamente. En este artículo, estaremos viendo como abusar del grupo *DNSAdmins* a nivel de dominio. Este grupo, lo que nos permite es crearnos una *DLL* maliciosa para manipular el servicio *DNS* para que, cuando se pare y arranque el servicio en cuestión, se cargue esta DLL que hemos creado y realices acciones como el usuario *Administrador*.
+Ya hemos publicado varios artículos sobre Active Directory, pero aún quedan muchos más que se irán subiendo próximamente.
 
-Para poder realizar este apartado, hemos usado la máquina [Resolute](https://app.hackthebox.com/machines/Resolute) de [Hack The Box](https://app.hackthebox.com/), cuya dirección IP es la *10.10.10.169* y el dominio correspondiente es *megabank.local*.
+Los miembros del grupo *DnsAdmins* tienen acceso a la información *DNS* de la red. El servicio DNS de Windows admite complementos personalizados y puede llamar a funciones de estos para resolver consultas de nombres que no estén dentro del alcance de las zonas DNS locales. El servicio DNS se ejecuta como **`NT AUTHORITY\SYSTEM`**, por lo que la membresía en este grupo podría potencialmente aprovecharse para **escalar privilegios en un Controlador de Dominio** o en una situación donde un servidor separado actúe como servidor DNS del dominio. Es posible usar la utilidad integrada `dnscmd` para especificar la ruta del complemento DLL.
+
+Para poder realizar este escenario, hemos usado la máquina [Resolute](https://app.hackthebox.com/machines/Resolute) de [Hack The Box](https://app.hackthebox.com/), cuya dirección IP es la *10.10.10.169* y el dominio correspondiente es *megabank.local*.
 
 ###  **Gráfico del escenario**
 
