@@ -89,7 +89,7 @@ Con esto, habremos logrado agregar un nuevo *Computer Object* al dominio.
 Una vez agregado el equipo, al estar en el grupo *Certificate Service DCOM Access*, tenemos la posibilidad de solicitar un certificado `pfx` a nombre de *Administrator* con el cual posteriormente, podremos obtener el *hash NTLM* del administrador.
 
 ```bash
-certipy req -username MACHINE-NAME$ -password 'MACHINE-PASSWORD' -ca AUTHORITY-CA -dc-ip DC-IP -template VULNERABLE-TEMPLATE-NAME -upn Administator@DOMINIO -dns DOMINIO -debug
+certipy req -username MACHINE-NAME$ -password 'MACHINE-PASSWORD' -ca AUTHORITY-CA -dc-ip DC-IP -template VULNERABLE-TEMPLATE-NAME -upn Administrator@DOMINIO -dns DOMINIO -debug
 ```
 
 ![req administrator pfx cert.png](/assets/img/req-administrator-pfx-cert.png)
@@ -97,7 +97,7 @@ certipy req -username MACHINE-NAME$ -password 'MACHINE-PASSWORD' -ca AUTHORITY-C
 Esto nos habrá generado un fichero `administrator_authority.pfx` en nuestro directorio actual. Haciendo uso de este certificado, podemos impersonar al usuario administrador y solicitar su hash NTLM en su nombre.
 
 ```bash
-certipy auth -pfx administator_authority.pfx -debug
+certipy auth -pfx administrator_authority.pfx -debug
 ```
 
 ![certipy auth administrator hash.png](/assets/img/certipy-auth-administrator-hash.png)
@@ -107,6 +107,8 @@ Como queremos obtener el hash de `Administrator@authority.htb` ejecutamos la opc
 #### **Solucionando KDC_ERR_PADATA_TYPE_NOSUPP**
 
 Habrá ocasiones en el que a la hora de solicitar este hash nos aparezca el error de `KDC_ERR_PADATA_TYPE_NOSUPP`, lo que significa que el *DC* no soporta *PKINIT*, es decir, la autenticación a través de un certificado. Entonces, debemos tener en nuestro arsernal una manera alternativa para poder llegar a ganar acceso como administradores. 
+
+![error KDC_ERR_PADATA_TYPE_NOSUPP](/assets/img/kdc_err_padata_type_nosupp-authority-htb.png)
 
 >**KDC_ERR_PADATA_TYPE_NOSUPP**<br>
 >Si buscamos en [Internet](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4768) el significado del mensaje de error *KDC_ERR_PADATA_TYPE_NOSUPP* nos aparece lo siguiente.
