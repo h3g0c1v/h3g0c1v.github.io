@@ -172,7 +172,7 @@ impacket-getST -spn 'cifs/DC-NAME.DOMINIO' -impersonate Administrator 'DOMINIO/M
 
 ![getST administrator ccache.png](/assets/img/getST-administrator-ccache.png)
 
-### **DCSync Attack**
+#### **DCSync Attack**
 
 La herramienta habrá generado un fichero `.ccache` y, algo que podemos realizar con esto es un **DCSync Attack**. Para ello, necesitaremos exportar la variable `KRB5CCNAME` para que valga el propio nombre de este fichero generado por `getST.py`. En mi caso, lo he renombrado a `Administrator.ccache`.
 
@@ -188,7 +188,7 @@ secretsdump.py -k -no-pass DOMINIO/Administrator@DC-NAME.DOMINIO -just-dc-ntlm
 
 ![dcsync con administrator ccache file.png](/assets/img/dcsync-con-administrator-ccache-file.png)
 
-## **Pass The Hash**
+### **Pass The Hash**
 
 Con el hash NTLM del *Administrator* en nuestro poder, podemos hacer un **Pass the Hash (PtH)** y conseguir acceso como este sin tener que conoecer sus credenciales.
 
