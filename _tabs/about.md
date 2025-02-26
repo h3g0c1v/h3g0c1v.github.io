@@ -4,8 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-👋 Aka. Hegociv | Junior Pentester | EJPT | ASIR | SMR | CTF Player | Múltiples Certificaciones de Hacking<br>
-📚 ¿Por qué este repositorio? Porque, me gustaría colaborar en la comunidad de ciberseguridad ....<br>
+👋 Aka. Hegociv | Junior Pentester | eJPTv2 | ASIR | SMR | CTF Player | Múltiples Certificaciones de Hacking<br>
+📚 ¿Por qué este blog? Porque, me gustaría colaborar en la comunidad de ciberseguridad ....<br>
 👀 Me interesa trabajar en un Red Team en el departamento de ciberseguridad ....<br>
 🌱 Actualmente estoy aprendiendo todo tipo de cosas para ampliar mis conocimientos ...<br>
 ⚡ Me encanta romper sistemas (legalmente por supuesto) ...<br>
