@@ -43,7 +43,7 @@ Entonces, supongamos que **Ana** quiere *enviar un mensaje secreto* a **Carlos**
 
 Por lo que, **solo Carlos puede descifrarlo** ya que solo él tiene su clave privada. En la siguiente imagen, podemos verlo de una manera más visual el *[funcionamiento basico del cifrado con clave publica](https://excalidraw.com/#json=ccoJLi4-oRUpvjjcVgZpW,LTJkQ83t189qsb4N31RWUA)*.
 
-<img src="/assets/img/Funcionamiento-basico-del-cifrado-con-clave-publica.png" style="border: 1px solid black; max-width: 400px"/>
+<img src="/assets/img/Funcionamiento-basico-del-cifrado-con-clave-publica.png" alt="Funcionamiento Basico del Cifrado con Clave Publica - Esquema" style="border: 1px solid black; max-width: 400px"/>
 
 ## **Configuración del Laboratorio**
 
