@@ -1,4 +1,3 @@
-```bash
 cursor_shape          Underline
 cursor_underline_thickness 1
 window_padding_width  20
@@ -46,4 +45,3 @@ cursor_text_color #1a1b26
 # Selection highlight
 selection_foreground #7aa2f7
 selection_background #28344a
-```

@@ -1,4 +1,3 @@
-```bash
 enable_audio_bell no
 
 include color.ini
@@ -46,4 +45,3 @@ map ctrl+shift+t new_tab_with_cwd
 background_opacity 0.95
 
 shell zsh
-```

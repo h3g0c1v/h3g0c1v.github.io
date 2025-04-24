@@ -1,4 +1,3 @@
-```bash
 #!/bin/sh
 
 IFACE1=$(/usr/sbin/ifconfig | grep tun0 | awk '{print $1}' | tr -d ':')
@@ -13,7 +12,8 @@ elif [ "$IFACE2" ]; then
 else
 	echo "%{F#FF6961} %{u-} Disconnected"
 fi
-```
+
+-------------------------------------------------------------------------------------------------------------
 
 El primer icono es el siguiente.
 

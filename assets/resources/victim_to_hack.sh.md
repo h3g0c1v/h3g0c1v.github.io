@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
  
 ip_address=$(/bin/cat /home/kali/.config/bin/target | awk '{print $1}')
@@ -9,7 +8,8 @@ if [ $ip_address ] && [ $machine_name ]; then
 else
     echo "%{F#77DD77}󰓾 %{u-}%{F#ffffff} No target"
 fi
-```
+
+-------------------------------------------------------------------------------------------------------------
 
 Ambos iconos son el siguiente.
 

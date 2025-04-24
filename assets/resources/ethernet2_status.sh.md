@@ -1,4 +1,3 @@
-```bash
 #!/bin/sh
 
 eth0=$(/usr/sbin/ifconfig eth0 | grep "inet " | awk '{print $2}')
@@ -8,7 +7,8 @@ if [ $eth0 ]; then
 else
 	echo "%{F#FF6961}󰌙 %{F#ffffff}Disconnected"
 fi
-```
+
+-------------------------------------------------------------------------------------------------------------
 
 El primer icono es el siguiente.
 

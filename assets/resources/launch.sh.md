@@ -1,4 +1,3 @@
-```bash
 #!/usr/bin/env sh
 
 ## Add this to your wm startup file.
@@ -25,5 +24,3 @@ polybar primary -c ~/.config/polybar/current.ini &
 
 ## Center bar
 polybar primary -c ~/.config/polybar/workspace.ini &
-```
-

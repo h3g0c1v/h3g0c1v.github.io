@@ -1,4 +1,3 @@
-```bash
 #!/usr/bin/env dash
 
 if bspc query -N -n focused.floating > /dev/null; then
@@ -15,4 +14,3 @@ case "$1" in
 esac
 
 bspc node -z "$dir" "$x" "$y" || bspc node -z "$falldir" "$x" "$y"
-```

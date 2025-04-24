@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 
 interface=$(cat /home/kali/.config/scripts/ethernet_status.sh | grep -Eo "eth." | head -n 1)
@@ -10,7 +9,8 @@ elif [ $interface == "eth1" ]; then
 else
 	echo "%{F#2495e7} %{F#ffffff}"
 fi
-```
+
+-------------------------------------------------------------------------------------------------------------
 
 El primer icono es el siguiente.
 
