@@ -34,11 +34,11 @@ Además, de las máquinas, tendrás que responder a **35 preguntas**, algunas ti
 
 ## **Experiencia y preparación**
 ### Experiencia previa
-En cuando a mi experiencia previa para el examen, **ya contaba con mucha más práctica** resolviendo múltiples máquinas en diferentes plataformas como *[Hack The Box](https://www.hackthebox.com/)*, *[Try Hack Me](https://tryhackme.com/)*, *[The Hacker Labs](https://thehackerslabs.com/)* o *[Vulnhub](https://www.vulnhub.com/)* entre otras, además de haber realizado **varios cursos centrados en la seguridad ofensiva**. Es debido a esto, que no realicé el curso completo del *PTS*, ya que la mayoría de los temas que se tocan los tenía claros por mi experiencia previa.
+En cuanto a mi experiencia previa para el examen, **ya contaba con mucha más práctica** resolviendo múltiples máquinas en diferentes plataformas como *[Hack The Box](https://www.hackthebox.com/)*, *[Try Hack Me](https://tryhackme.com/)*, *[The Hacker Labs](https://thehackerslabs.com/)* o *[Vulnhub](https://www.vulnhub.com/)* entre otras, además de haber realizado **varios cursos centrados en la seguridad ofensiva**. Es debido a esto, que no realicé el curso completo del *PTS*, ya que la mayoría de los temas que se tocan los tenía claros por mi experiencia previa.
 
 En cuyo caso, decidí seguir practicando con diferentes máquinas que tenían un mayor enfoque en esta certificación y es por ello que dejo un recurso que he creado con todas mis máquinas realizadas en la preparación del examen.
 
-> [Máquinas para Prepararte el eJPT](https://docs.google.com/spreadsheets/d/1W8MXfDbTfQHFZ5XRMAKMysSBwvOpXuUS/edit?gid=1173184797#gid=1173184797)
+> [Máquinas para Prepararte el eJPTv2](https://docs.google.com/spreadsheets/d/1W8MXfDbTfQHFZ5XRMAKMysSBwvOpXuUS/edit?gid=1173184797#gid=1173184797)
 
 Si eres principiante y no tienes experiencia, te recomiendo **aprovechar todo el contenido y material** que te proporciona el curso *PTS* de *INE Security*. Con el contenido de este curso, podrás ir totalmente seguro al examen.
 
