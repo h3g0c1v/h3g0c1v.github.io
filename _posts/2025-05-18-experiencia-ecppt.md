@@ -1,5 +1,5 @@
 ---
-title: Mi Experiencia con la certificación eCPPTv3
+title: Mi Experiencia con la Certificación eCPPTv3
 description:  El objetivo de este blog es brindar apoyo a las personas que estén en progreso de obtener la certificación eCPPTv3.
 date: 2025-05-18
 categories: [Certifications, eCPPTv3]

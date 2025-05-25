@@ -1,5 +1,5 @@
 ---
-title: Mi Experiencia con la certificación eJPTv2
+title: Mi Experiencia con la Certificación eJPTv2
 description:  El objetivo de este blog es brindar apoyo a las personas que se estén adentrando al mundo de la ciberseguridad.
 date: 2024-10-17
 categories: [Certifications, eJPTv2]
